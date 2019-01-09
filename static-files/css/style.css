@@ -66,8 +66,10 @@ a {
 
 .action-tile {
 
-    margin: 10px;
-    border: 2px solid black;
+    margin: 7px;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
 
 }
 
@@ -83,7 +85,7 @@ a {
 .follow-tile {
 
     background-color: white;
-    padding: 1px;
+    /*padding: 5%;*/
     margin: 5px;
     width: 5vw;
     height: 5vw;
@@ -109,7 +111,7 @@ a {
         flex-direction: column;
     }
     #follow-me {
-        display: flex;
+        display: block;
     }
     #follow {
         display: none;

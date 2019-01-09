@@ -10,84 +10,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="static-files/css/material-components-web.css">
-        <style>
-            :root {
-                --mdc-theme-primary: #0e4ead;
-            }
-        </style>
+
+        <link rel="stylesheet" href="static-files/css/style.css">
+
     </head>
     <body>
-        <h1 class="mdc-typography--display1">Hello, World!</h1>
-        <button type="button" class="mdc-button mdc-button--raised">
-            Press Me
-        </button>
 
-        <main>
-            <h1 class="mdc-typography--display1">Tell us about yourself!</h1>
-
-            <form action="#" id="greeting-form">
-                <div>
-                    <div class="mdc-form-field">
-                        <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                            <input id="firstname" type="text" class="mdc-textfield__input">
-                            <label for="firstname" class="mdc-textfield__label">
-                                First Name
-                            </label>
-                            <div class="mdc-textfield__bottom-line"></div>
-                        </div>
-                    </div>
-
-                    <div class="mdc-form-field">
-                        <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-                            <input id="lastname" type="text" class="mdc-textfield__input">
-                            <label for="lastname" class="mdc-textfield__label">
-                                Last Name
-                            </label>
-                            <div class="mdc-textfield__bottom-line"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="submit"
-                        class="mdc-button
-                   mdc-button--raised
-                   mdc-ripple-surface"
-                        data-mdc-auto-init="MDCRipple">
-                    Print Greeting
-                </button>
-            </form>
-
-            <!-- The p element below is where we'll eventually output our greeting -->
-            <p class="mdc-typography--headline" id="greeting"></p>
-        </main>
-
-        <script>
-            document.getElementById('greeting-form').addEventListener('submit', function(evt) {
-                evt.preventDefault();
-                var firstname = evt.target.elements.firstname.value;
-                var lastname = evt.target.elements.lastname.value;
-                var greeting = 'Hello';
-                if (firstname || lastname) {
-                    greeting += ', ';
-                    if (firstname && lastname) {
-                        greeting += firstname + ' ' + lastname;
-                    } else if (lastname) {
-                        greeting += 'Mx. ' + lastname;
-                    } else {
-                        greeting += firstname;
-                    }
-                }
-                greeting += '!';
-
-                document.getElementById('greeting').textContent = greeting;
-            });
-        </script>
-
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="static-files/js/bin/materialize.min.js"></script>
-        <script type="text/javascript" src="static-files/js/material-components-web.js"></script>
-        <script>mdc.autoInit();</script>
     </body>
 </html>

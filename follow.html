@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Follow | Siddharth Poduval</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow | Siddharth Poduval</title>
 
     <style>
         body {
@@ -36,8 +36,8 @@
         }
 
         #close {
-            padding-right: 10px;
-            font-size: 50px;
+            padding-right: calc(0.5em + 0.1vmin);
+            font-size: calc(1em + 5vmin);
             align-self: flex-end;
         }
 
@@ -53,11 +53,11 @@
 
         .follow-tile {
             background-color: white;
-            padding: 5%;
-            margin: 5px;
+            padding: calc(0.3em + 1.5vmin);
+            margin: calc(0.1em + 1.5vmin);
 
-            height: 20vmin;
-            width: 20vmin;
+            height: calc(1.5em + 15vmin);
+            width: calc(1.5em + 15vmin);
         }
 
     </style>
@@ -67,32 +67,32 @@
     <div id="follow">
         <div class="follow-tile" id="github">
             <a href="https://www.github.com/sudocoder98">
-                <img src="static-files/assets/social-media-logos/GitHub_Mark_Black.png">
+                <div id="github-logo" style="background: url('static-files/assets/social-media-logos/GitHub_Mark_Black.svg') no-repeat; background-position: 50%; height: 100%; background-size: calc(1.5em + 15vmin);"></div>
             </a>
         </div>
         <div class="follow-tile" id="researchgate">
             <a href="https://www.researchgate.net/profile/Siddharth_Poduval">
-                <img src="static-files/assets/social-media-logos/RG_Logo.png">
+                <div id="researchgate-logo" style="background: #000 url('static-files/assets/social-media-logos/RG_logo.svg') no-repeat; background-position: 50%;height: 100%; background-size: calc(1em + 5vmin);"></div>
             </a>
         </div>
         <div class="follow-tile" id="instagram">
             <a href="https://www.instagram.com/sid12598">
-                <img src="static-files/assets/social-media-logos/IG_Glyph_Black.png">
+                <img src="static-files/assets/social-media-logos/IG_Glyph_Black_wikimedia.svg">
             </a>
         </div>
         <div class="follow-tile" id="twitter">
             <a href="https://www.twitter.com/sudocoder98">
-                <img src="static-files/assets/social-media-logos/Twitter_Logo_Blue.png">
+                <img src="static-files/assets/social-media-logos/Twitter_Logo_WhiteOnBlue.svg">
             </a>
         </div>
         <div class="follow-tile" id="facebook">
             <a href="https://www.facebook.com">
-                <img src="static-files/assets/social-media-logos/FB_Logo_Black.png">
+                <img src="static-files/assets/social-media-logos/FB_Logo_Black.svg">
             </a>
         </div>
         <div class="follow-tile" id="email">
             <a href="mailto:sidpoduval98@gmail.com">
-                <img src="static-files/assets/social-media-logos/e-mail_symbol.png">
+                <div id="E-mail-logo" style="background: url('static-files/assets/social-media-logos/E-mail_Logo.svg') no-repeat; background-position: 50%; height: 100%; background-size: calc(1.5em + 10vmin);"></div>
             </a>
         </div>
     </div>

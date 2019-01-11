@@ -1,14 +1,13 @@
-* {
-    margin: 0px;
-    padding: 0px;
+html {
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
     margin: 0;
-    padding: 5%;
+    padding: 5vmin;
 
     background-image: linear-gradient(to top, rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)),url("../assets/background.jpeg");
-    /*background-image: url("../assets/background.jpeg");*/
     background-size: cover;
     background-attachment: fixed, fixed;
     background-position: center, center;
@@ -20,7 +19,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
 }
 
 img {
@@ -35,79 +33,69 @@ a {
 }
 
 #main {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #name {
-    font-family: "Oswald";
+    font-family: "Oswald", "American Typewriter", monospace;
+    font-size: calc(1em + 8vmin);
 }
 
 #designation {
     font-family: "Staatliches", "American Typewriter", monospace;
+    font-size: calc(0.6em + 2.5vmin);
 }
 
 #tag-line {
-    font-family: "Caveat";
+    font-family: "Caveat", "American Typewriter", monospace;
+    font-size: calc(0.6em + 2.5vmin);
 }
 
 
 #actions {
     display: flex;
-
     flex-direction: row;
     justify-content: center;
-
     font-family: "Staatliches","American Typewriter", monospace;
+    font-size: calc(0.5em + 2vmin);
 }
 
 .action-tile {
-
-    margin: 7px;
-    border: 2px solid white;
-    padding: 10px;
+    margin: 1.5vmin;
+    border: calc(0.1em + 0.1vmin) solid white;
+    padding: calc(0.1em + 1vmin);
     text-align: center;
-
 }
 
 #follow {
-
     display: flex;
-
     flex-direction: row;
     justify-content: center;
-
 }
 
 .follow-tile {
-
     background-color: white;
-    /*padding: 5%;*/
-    margin: 5px;
-    width: 5vw;
-    height: 5vw;
+    margin: 1vmin;
+    padding: calc(0.1em + 0.1vmin);
+    width: calc(1em + 1vmin);
+    height: calc(1em + 1vmin);
+}
+
+#image {
+    width: calc(5em + 30vmin);
 }
 
 
-@media only screen and (max-width : 600px) {
-
+@media only screen and (max-aspect-ratio: 1/1) {
     #main {
         order: 2;
     }
-    #name {
-        font-size: 8vw;
-    }
-    #designation {
-        font-size: 3vw;
-    }
-    #tag-line {
-        font-size: 5vw;
+    #image {
+        order: 1;
     }
     #actions {
-        font-size: 6vw;
         flex-direction: column;
     }
     #follow-me {
@@ -116,32 +104,17 @@ a {
     #follow {
         display: none;
     }
-    #image {
-        order: 1;
-        width: 50%;
-        height: 50%;
-    }
 
 }
 
-@media only screen and (min-width: 601px) and (max-width : 768px) {
-
+@media only screen and (min-aspect-ratio: 1/1) {
     #main {
-    order: 2;
+        order: 1;
+        margin: 1vmin;
     }
-    #name {
-        font-size: 8vw;
-    }
-
-    #designation {
-        font-size: 3vw;
-    }
-    #tag-line {
-        font-size: 5vw;
-    }
-    #actions {
-        font-size: 6vw;
-        flex-direction: column;
+    #image {
+        order: 2;
+        margin: 1vmin;
     }
     #follow-me {
         display: none;
@@ -149,41 +122,4 @@ a {
     #follow {
         display: flex;
     }
-    #image {
-        order: 1;
-        width: 50%;
-        height: 50%;
-    }
-
-}
-
-@media only screen and (min-width: 769px) {
-
-    #main {
-        margin-right: 10px;
-    }
-
-    #name {
-        font-size: 6vw;
-    }
-
-    #designation {
-        font-size: 1.5vw;
-        align-self: flex-end;
-    }
-    #tag-line {
-        font-size: 2vw;
-    }
-    #actions {
-        font-size: 3vw;
-    }
-    #follow-me {
-        display: none;
-    }
-
-    #image {
-        width: 30%;
-        height: 30%;
-    }
-
 }

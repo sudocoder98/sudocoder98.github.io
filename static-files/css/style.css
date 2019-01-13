@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 5vmin;
 
-    background-image: linear-gradient(to top, rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)),url("../assets/background.jpeg");
+    background-image: linear-gradient(to top, rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)),url("https://res.cloudinary.com/sudocoder/image/upload/f_auto,q_auto/v1547280637/sudocoder98.github.io/background.jpg");
     background-size: cover;
     background-attachment: fixed, fixed;
     background-position: center, center;
@@ -39,21 +39,21 @@ a {
 }
 
 #name {
-    font-family: "Oswald", "American Typewriter", monospace;
-    font-size: -webkit-calc(1em + 8vmin);
-    font-size: calc(1em + 8vmin);
-    margin: calc(0.1em + 0.5vh);
+    font-family: "Oswald", "Arial Narrow", sans-serif;
+    font-size: -webkit-calc(1em + 7vmin);
+    font-size: calc(1em + 7vmin);
+    margin: calc(0.1em + 0.3vh);
 }
 
 #designation {
     font-family: "Staatliches", "American Typewriter", monospace;
     font-size: -webkit-calc(0.6em + 2.5vmin);
     font-size: calc(0.6em + 2.5vmin);
-    margin: calc(0.1em + 0.5vh);
+    margin: calc(0.1em + 0.4vh);
 }
 
 #tag-line {
-    font-family: "Caveat", "American Typewriter", monospace;
+    font-family: "Caveat", hand, cursive;
     font-size: -webkit-calc(0.6em + 2.5vmin);
     font-size: calc(0.6em + 2.5vmin);
     margin: calc(0.1em + 0.5vh);

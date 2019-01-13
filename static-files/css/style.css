@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Oswald";
   font-display: swap;
-  src: local(Oswald), url("https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2") format("woff2");
   font-weight: 400;
+  src: local("Oswald"), local("Oswald Regular"), local("Oswald-Regular"), url("https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8Gl-1PKw.woff2") format("woff2"), url("http://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8Al-1PKw.woff") format("woff");
 }
 @font-face {
   font-family: "Caveat";
   font-display: swap;
-  src: local(Caveat), url("https://fonts.gstatic.com/s/caveat/v4/Wnz6HAc5bAfYB2Q7ZjYYiAzcPA.woff2") format("woff2");
   font-weight: 400;
+  src: local(Caveat), local("Caveat Regular"), local("Caveat-Regular"), url("https://fonts.gstatic.com/s/caveat/v4/Wnz6HAc5bAfYB2Q7ZjYYiAzcPA.woff2") format("woff2"), url("http://fonts.gstatic.com/s/caveat/v4/Wnz6HAc5bAfYB2Q7ZjYeiAzcPA.woff") format("woff");
 }
 @font-face {
   font-family: "Staatliches";
   font-display: swap;
-  src: local(Staatliches), url("https://fonts.gstatic.com/s/staatliches/v2/HI_OiY8KO6hCsQSoAPmtMYebvpCfOMPT.woff2") format("woff2");
   font-weight: 400;
+  src: local(Staatliches), local("Staatliches Regular"), local("Staatliches-Regular"), url("https://fonts.gstatic.com/s/staatliches/v2/HI_OiY8KO6hCsQSoAPmtMYebvpCfOMPT.woff2") format("woff2"), url("http://fonts.gstatic.com/s/staatliches/v2/HI_OiY8KO6hCsQSoAPmtMYebvpafOMPT.woff") format("woff");
 }
 html {
   height: 100%;
@@ -22,8 +22,6 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 5vmin;
   background-image: linear-gradient(to top, rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url("https://res.cloudinary.com/sudocoder/image/upload/f_auto,q_auto/v1547280637/sudocoder98.github.io/background.jpg");
   background-size: cover;
   background-attachment: fixed, fixed;
@@ -52,29 +50,25 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
-#name {
+#main #name {
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: -webkit-calc(1em + 7vmin);
   font-size: calc(1em + 7vmin);
   margin: calc(0.1em + 0.3vh);
 }
-
-#designation {
+#main #designation {
   font-family: "Staatliches", "American Typewriter", monospace;
   font-size: -webkit-calc(0.6em + 2.5vmin);
   font-size: calc(0.6em + 2.5vmin);
   margin: calc(0.1em + 0.4vh);
 }
-
-#tag-line {
+#main #tag-line {
   font-family: "Caveat", "Roboto", cursive;
   font-size: -webkit-calc(0.6em + 2.5vmin);
   font-size: calc(0.6em + 2.5vmin);
   margin: calc(0.1em + 0.5vh);
 }
-
-#actions {
+#main #actions {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -83,21 +77,18 @@ a {
   font-size: calc(0.5em + 2vmin);
   margin: calc(0.1em + 0.5vh);
 }
-
-.action-tile {
+#main #actions .action-tile {
   margin: 1.5vmin;
   border: calc(0.1em + 0.1vmin) solid white;
   padding: calc(0.1em + 1vmin);
   text-align: center;
 }
-
-#follow {
+#main #follow {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
-.follow-tile {
+#main #follow .follow-tile {
   background-color: white;
   margin: 1vmin;
   padding: calc(0.1em + 0.1vmin);

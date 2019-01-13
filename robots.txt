@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Disallow: /static-files/
+Sitemap: sudocoder98.github.io/

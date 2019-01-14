@@ -63,6 +63,10 @@
             max-width: 100%;
             height: auto
         }
+        footer, iframe {
+            display: none;
+            visibility: hidden
+        }
         #main {
             display: flex;
             flex-direction: column;
@@ -91,13 +95,27 @@
             width: calc(1em + 1vmin);
             height: calc(1em + 1vmin)
         }
+        #github-logo {
+            background: url('https://res.cloudinary.com/sudocoder/image/upload/v1547360321/sudocoder98.github.io/logos/GitHub_Mark_Black.svg') no-repeat;
+            background-position: 50%;
+            height: 100%;
+            background-size: calc(1em + 1vmin);
+        }
+        #researchgate-logo {
+            background: #000 url('https://res.cloudinary.com/sudocoder/image/upload/v1547360321/sudocoder98.github.io/logos/RG_Logo.svg') no-repeat;
+            background-position: 50%;
+            height: 100%;
+            background-size: calc(0.5em + 1vmin);
+        }
+        #email-logo {
+            background: url('https://res.cloudinary.com/sudocoder/image/upload/v1547360321/sudocoder98.github.io/logos/E-mail_Logo.svg') no-repeat;
+            background-position: 50%;
+            height: 100%;
+            background-size: calc(1em + 1vmin);
+        }
         #image {
             width: calc(5em + 30vmin);
             align-self: center
-        }
-        footer, iframe {
-            display: none;
-            visibility: hidden
         }
     </style>
     <!-- Non Critical CSS - External --><!-- To be deferred using preload/import -->
@@ -125,12 +143,12 @@
         <div id="follow">
             <div class="follow-tile" id="github">
                 <a title="My GitHub Profile" itemprop="sameAs" href="https://www.github.com/sudocoder98">
-                    <div id="github-logo" role="img" aria-label="The GitHub Logo" style="background: url('https://res.cloudinary.com/sudocoder/image/upload/v1547360321/sudocoder98.github.io/logos/GitHub_Mark_Black.svg') no-repeat; background-position: 50%; height: 100%; background-size: calc(1em + 1vmin);"></div>
+                    <div id="github-logo" role="img" aria-label="The GitHub Logo"></div>
                 </a>
             </div>
             <div class="follow-tile" id="researchgate">
                 <a title="My ResearchGate Profile" itemprop="sameAs" href="https://www.researchgate.net/profile/Siddharth_Poduval">
-                    <div id="researchgate-logo" role="img" aria-label="The Research-Gate Logo" style="background: #000 url('https://res.cloudinary.com/sudocoder/image/upload/v1547360321/sudocoder98.github.io/logos/RG_Logo.svg') no-repeat; background-position: 50%;height: 100%; background-size: calc(0.5em + 1vmin);"></div>
+                    <div id="researchgate-logo" role="img" aria-label="The Research-Gate Logo"></div>
                 </a>
             </div>
             <div class="follow-tile" id="linkedin">
@@ -155,7 +173,7 @@
             </div>
             <div class="follow-tile" id="email">
                 <a title="My Public E-mail ID" href="mailto:sidpoduval98@gmail.com">
-                    <div role="img" aria-label="Email Icon" id="E-mail-Logo" style="background: url('https://res.cloudinary.com/sudocoder/image/upload/v1547360321/sudocoder98.github.io/logos/E-mail_Logo.svg') no-repeat; background-position: 50%; height: 100%; background-size: calc(1em + 1vmin);"></div>
+                    <div role="img" aria-label="Email Icon" id="email-logo"></div>
                 </a>
             </div>
         </div>
@@ -165,4 +183,5 @@
     </div>
     <footer>This website is powered by GitHub Pages. To view the source code, <a title="My GitHub Profile" href="https://github.com/sudocoder98/sudocoder98.github.io">visit the repository.</a></footer>
 </body>
+<link rel="prefetch" type="text/html" as="document" href="follow.html">
 </html>
